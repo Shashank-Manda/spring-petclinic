@@ -8,11 +8,11 @@
         state: directory
     - name: copy file to Windows VM
       win_copy:
-        src: /home/shashankmsy/test/files/spring-petclinic-main.zip
+        src: /home/shashankmsy/test/files/spring-petclinic.zip
         dest: C:\javaproject
         remote_src: no
     - name: unziping the java folder
       win_unzip:
-        src: C:\javaproject\spring-petclinic-main.zip
+        src: C:\javaproject\spring-petclinic.zip
         dest: C:\javaproject
         remote_src: yes
