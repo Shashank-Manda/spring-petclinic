@@ -10,7 +10,7 @@
       win_copy:
         src: /home/shashankmsy/test/files/spring-petclinic.zip
         dest: C:\javaproject
-        remote_src: no
+        remote_src: yes
     - name: unziping the java folder
       win_unzip:
         src: C:\javaproject\spring-petclinic.zip
